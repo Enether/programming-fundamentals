@@ -5,3 +5,5 @@ Making some changessssssssss... god damn these changes
 This time we're creating a conflict to be resolved in gitbash :o Editing this god-damned file again to have some conflicits again. YOU GUYS DID IT
 Edited in the master branch and This comes from the great DEVELOP branch
 edited from GitBash(for windows)
+
+This is changed from the new gitbashBranc branch
