@@ -3,3 +3,4 @@ This respository holds exercises, homeworks and other materials from SoftUni's P
 Editing from github, because I want a conflict. Oh no, we are going to have a conflictt ;)
 Making some changessssssssss... god damn these changes
 Edited in the master branch and This comes from the great DEVELOP branch
+edited from GitBash(for windows)
