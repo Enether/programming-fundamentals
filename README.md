@@ -6,3 +6,4 @@ This time we're creating a conflict to be resolved in gitbash :o Editing this go
 Edited in the master branch and This comes from the great DEVELOP branch
 edited from GitBash(for windows)
 Here are some more changes, from the MASTER branch of course :)
+This is changed from the new gitbashBranc branch
