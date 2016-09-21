@@ -1,0 +1,5 @@
+C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\02.Circle Area (12 Digits Precision)\bin\Debug\02.Circle Area (12 Digits Precision).exe.config
+C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\02.Circle Area (12 Digits Precision)\bin\Debug\02.Circle Area (12 Digits Precision).exe
+C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\02.Circle Area (12 Digits Precision)\bin\Debug\02.Circle Area (12 Digits Precision).pdb
+C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\02.Circle Area (12 Digits Precision)\obj\Debug\02.Circle Area (12 Digits Precision).exe
+C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\02.Circle Area (12 Digits Precision)\obj\Debug\02.Circle Area (12 Digits Precision).pdb

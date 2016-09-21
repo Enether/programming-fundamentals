@@ -1,0 +1,5 @@
+C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\03.Exact Sum of Real Numbers\bin\Debug\03.Exact Sum of Real Numbers.exe.config
+C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\03.Exact Sum of Real Numbers\bin\Debug\03.Exact Sum of Real Numbers.exe
+C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\03.Exact Sum of Real Numbers\bin\Debug\03.Exact Sum of Real Numbers.pdb
+C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\03.Exact Sum of Real Numbers\obj\Debug\03.Exact Sum of Real Numbers.exe
+C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\03.Exact Sum of Real Numbers\obj\Debug\03.Exact Sum of Real Numbers.pdb
