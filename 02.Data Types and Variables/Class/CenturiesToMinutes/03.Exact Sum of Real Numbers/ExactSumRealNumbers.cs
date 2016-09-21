@@ -8,7 +8,7 @@ class ExactSumRealNumbers
     static void Main()
     {
         int numbersCount = int.Parse(Console.ReadLine());
-        decimal sum = 0.0M;
+        decimal sum = 0M;
 
         for (int i = 0; i < numbersCount; i++)
         {
