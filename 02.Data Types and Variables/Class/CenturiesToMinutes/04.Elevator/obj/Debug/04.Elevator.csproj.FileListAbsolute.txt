@@ -1,6 +1,0 @@
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\04.Elevator\bin\Debug\04.Elevator.exe.config
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\04.Elevator\obj\Debug\04.Elevator.csprojResolveAssemblyReference.cache
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\04.Elevator\bin\Debug\04.Elevator.exe
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\04.Elevator\bin\Debug\04.Elevator.pdb
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\04.Elevator\obj\Debug\04.Elevator.exe
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\04.Elevator\obj\Debug\04.Elevator.pdb

@@ -1,6 +1,0 @@
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\01.Centuries To Minutes\bin\Debug\01.Centuries To Minutes.exe.config
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\01.Centuries To Minutes\bin\Debug\01.Centuries To Minutes.exe
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\01.Centuries To Minutes\bin\Debug\01.Centuries To Minutes.pdb
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\01.Centuries To Minutes\obj\Debug\01.Centuries To Minutes.csprojResolveAssemblyReference.cache
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\01.Centuries To Minutes\obj\Debug\01.Centuries To Minutes.exe
-C:\Work\SoftUni\programming-fundamentals\02.Data Types and Variables\Class\CenturiesToMinutes\01.Centuries To Minutes\obj\Debug\01.Centuries To Minutes.pdb
