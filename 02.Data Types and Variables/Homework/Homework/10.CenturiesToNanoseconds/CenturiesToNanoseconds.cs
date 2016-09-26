@@ -14,7 +14,7 @@ class CenturiesToNanoseconds
         ulong seconds = (ulong)minutes * 60;
         ulong milliseconds = (ulong)seconds * 1000;
         ulong microseconds = milliseconds * 1000;
-        ulong nanoseconds = microseconds * 1000;
+        decimal nanoseconds = (decimal)microseconds * 1000;
 
         Console.WriteLine($"{centuries} centuries = {years} years = {days} days = {hours} hours = {minutes} minutes = {seconds} seconds = {milliseconds} milliseconds = {microseconds} microseconds = {nanoseconds} nanoseconds");
     }
