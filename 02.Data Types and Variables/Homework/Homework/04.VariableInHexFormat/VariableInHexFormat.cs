@@ -5,8 +5,7 @@ class VariableInHexFormat
 {
     static void Main()
     {
-        Console.WriteLine(Convert.ToInt32("0xFE"));
-        Console.WriteLine(Convert.ToInt32("0x37"));
+        Console.WriteLine(Convert.ToInt32(Console.ReadLine(), 16));
     }
 }
 

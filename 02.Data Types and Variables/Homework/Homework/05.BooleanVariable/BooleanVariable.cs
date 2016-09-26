@@ -6,7 +6,10 @@ class BooleanVariable
 {
     static void Main()
     {
-
+        if (Convert.ToBoolean(Console.ReadLine()))
+            Console.WriteLine("Yes");
+        else
+            Console.WriteLine("No");
     }
 }
 
