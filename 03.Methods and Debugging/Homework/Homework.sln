@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.PrimesInGivenRange", "07
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.CenterPoint", "08.CenterPoint\08.CenterPoint.csproj", "{820D2938-CF20-45F6-B90C-29945A2422FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.LongerLine", "09.LongerLine\09.LongerLine.csproj", "{1BE66057-5762-4694-B89E-52FDD6A5EE55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.CubeProperties", "10.CubeProperties\10.CubeProperties.csproj", "{FF164CF1-6AFA-47BC-A94C-89462E336E28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{820D2938-CF20-45F6-B90C-29945A2422FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{820D2938-CF20-45F6-B90C-29945A2422FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{820D2938-CF20-45F6-B90C-29945A2422FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BE66057-5762-4694-B89E-52FDD6A5EE55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE66057-5762-4694-B89E-52FDD6A5EE55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE66057-5762-4694-B89E-52FDD6A5EE55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE66057-5762-4694-B89E-52FDD6A5EE55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF164CF1-6AFA-47BC-A94C-89462E336E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF164CF1-6AFA-47BC-A94C-89462E336E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF164CF1-6AFA-47BC-A94C-89462E336E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF164CF1-6AFA-47BC-A94C-89462E336E28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
