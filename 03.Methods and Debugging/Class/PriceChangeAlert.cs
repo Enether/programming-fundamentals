@@ -17,7 +17,7 @@ class PriceChangeAlert
         for (int i = 0; i < n - 1; i++)
         {
             double stock = double.Parse(Console.ReadLine());
-            double difference = GetProcentageDifference(lastStock, stock);
+            double difference = GetPercentageDifference(lastStock, stock);
             bool isSignificantDifference = IsSignificantDifference(difference, significanceTreshold);
 
             string message = GetMessage(stock, lastStock, difference, isSignificantDifference);
@@ -30,6 +30,7 @@ class PriceChangeAlert
     private static string GetMessage(double stock, double lastStock, double difference, bool isSignificantDiff)
     {
         string msg = "";
+        difference *= 100;
         if (!isSignificantDiff)
             msg = string.Format("MINOR CHANGE: {0} to {1} ({2:F2}%)", lastStock, stock, difference);
 
@@ -53,7 +54,7 @@ class PriceChangeAlert
         return false;
     }
 
-    private static double GetProcentageDifference(double stockOne, double stockTwo)
+    private static double GetPercentageDifference(double stockOne, double stockTwo)
     {
         return (stockTwo - stockOne) / stockOne;
     }
