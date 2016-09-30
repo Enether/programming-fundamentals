@@ -32,8 +32,8 @@ class InstructionSet_broken
         while (opCode != "END")
         {
             string[] codeArgs = opCode.Split(' ');
-
             long result = 0;
+
             switch (codeArgs[0])
             {
                 case "INC":
