@@ -70,9 +70,9 @@ class DragonArmy
         string[] lineInfo = line.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
         string dragonType = lineInfo[DRAGON_TYPE_INDEX];
         string dragonName = lineInfo[DRAGON_NAME_INDEX];
-        int dragonDamage = lineInfo[DRAGON_DAMAGE_INDEX] != null ? int.Parse(lineInfo[DRAGON_DAMAGE_INDEX]) : DEFAULT_DAMAGE;
-        int dragonHealth = lineInfo[DRAGON_HEALTH_INDEX] != null ? int.Parse(lineInfo[DRAGON_HEALTH_INDEX]) : DEFAULT_HEALTH;
-        int dragonArmor = lineInfo[DRAGON_ARMOR_INDEX] != null ? int.Parse(lineInfo[DRAGON_ARMOR_INDEX]) : DEFAULT_ARMOR;
+        int dragonDamage = lineInfo[DRAGON_DAMAGE_INDEX] != "null" ? int.Parse(lineInfo[DRAGON_DAMAGE_INDEX]) : DEFAULT_DAMAGE;
+        int dragonHealth = lineInfo[DRAGON_HEALTH_INDEX] != "null" ? int.Parse(lineInfo[DRAGON_HEALTH_INDEX]) : DEFAULT_HEALTH;
+        int dragonArmor = lineInfo[DRAGON_ARMOR_INDEX] != "null" ? int.Parse(lineInfo[DRAGON_ARMOR_INDEX]) : DEFAULT_ARMOR;
 
         return new Tuple<string, string, int, int, int>(dragonType, dragonName, dragonDamage, dragonHealth, dragonArmor);
     }
