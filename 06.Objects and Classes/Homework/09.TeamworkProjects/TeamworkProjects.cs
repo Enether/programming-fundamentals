@@ -1,8 +1,29 @@
-﻿using System;
+﻿/*
+ Teamwork projects
+
+It's time for teamwork projects and you are responsible for making the teams. First you will receive an integer - the count of the teams you will have to register. You will be given a user and a team (separated with "-").  The user is the creator of that team. For every newly created team you should print a message: "Team {team Name} has been created by {user}!". Next you will receive user with team (separated with "->") which means that the user wants to join that team. 
+Upon receiving command: "end of assignment" you should print every team ordered by members count (descending) and then by name (ascending).
+ For each team you have to print it's members sorted by name (ascending). However there are several rules:
+
+If user tries to create a team more than once a message should be displayed: 
+"Team {teamName} was already created!"
+
+If user tries to join currently non-existing team a message should be displayed: 
+"Team {teamName} does not exist!"
+
+Member of a team cannot join another team - message should be thrown:
+"Member {user} cannot join team {team Name}!"
+
+/Creator of a team cannot create another team - message should be thrown: 
+"{user} cannot create another team!"
+
+In the end (after teams' report) teams with zero members (with only a creator) should disband.  Every team to disband should be printe 
+- {creator}
+-- {member}…"
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _09.TeamworkProjects
 {
@@ -17,65 +38,17 @@ namespace _09.TeamworkProjects
             int teamCount = int.Parse(Console.ReadLine());
 
             // create teams
-            List<Team> teams = new List<Team>();
-            for (int i = 0; i < teamCount; i++)
-            {
-                string[] info = Console.ReadLine().Split(new char[] { '-' }, StringSplitOptions.RemoveEmptyEntries);
-                string user = info[0];
-                string team = info[1];
-
-                
-                if (teams.Select(x => x.Name).Contains(team))  // trying to create an existing team again
-                {
-                    Console.WriteLine($"Team {team} was already created!");
-                    continue;
-                }
-                if (teams.Select(x => x.Creator).Contains(user))  // creator trying to create another team
-                {
-                    Console.WriteLine($"{user} cannot create another team!");
-                    continue;
-                }
-                Console.WriteLine($"Team {team} has been created by {user}!");
-                teams.Add(new Team(user, team));
-            }
+            List<Team> teams = CreateTeams(teamCount);
 
             // users join teams
-            while (true)
-            {
-                string command = Console.ReadLine();
-                if (command == "end of assignment")
-                    break;
+            HandleJoinTeams(teams);
 
-                string[] joinInfo = command.Split(new string[] { "->" }, StringSplitOptions.RemoveEmptyEntries);
-                string user = joinInfo[0];
-                string team = joinInfo[1];
-                // TODO: ORDER OF PRINTS
-                if (!teams.Select(x => x.Name).Contains(team))
-                {
-                    Console.WriteLine($"Team {team} does not exist!");
-                    continue;
-                }
-                if (teams.Select(x => x.Members.Contains(user)).Contains(true) ||
-                    teams.Select(x => x.Creator).Contains(user))  // the user is in another team
-                {
-                    Console.WriteLine($"Member {user} cannot join team {team}!");
-                    continue;
-                }
-                
 
-                foreach (var item in teams)
-                {
-                    if (item.Name == team)
-                        item.AddMember(user);
-                }
-            }
+            // Filter the empty teams in a list
+            List<Team> emptyTeams = teams.Where(x => x.Members.Count == 0).Select(team => team).OrderBy(team => team.Name).ToList();
 
             // remove empty teams
-            var emptyTeams = teams.Where(x => x.Members.Count == 0).Select(team => team).OrderBy(team => team.Creator).ToList();
-            foreach (var emptyTeam in emptyTeams)
-            {
-                teams.RemoveAll(team => team.Name == emptyTeam.Name);
-            }
+            teams = teams.Except(emptyTeams).ToList();
 
             // print results
             var orderedValidTeams = teams.OrderByDescending(team => team.Members.Count).ThenBy(team => team.Name);
@@ -94,12 +67,69 @@ namespace _09.TeamworkProjects
 
             // print disbanded teams
             Console.WriteLine("Teams to disband:");
-           // var emt = emptyTeams.OrderBy(x => x.Name)
             foreach (var team in emptyTeams)
             {
                 Console.WriteLine(team.Name);
             }
         
+        }
+
+        static List<Team> CreateTeams(int teamCount)
+        {
+            // create a list of Team objects
+            List<Team> teams = new List<Team>();
+            for (int i = 0; i < teamCount; i++)
+            {
+                string[] info = Console.ReadLine().Split(new char[] { '-' }, StringSplitOptions.RemoveEmptyEntries);
+                string user = info[0];
+                string team = info[1];
+
+
+                if (teams.Select(x => x.Name).Contains(team))  // trying to create an existing team again
+                {
+                    Console.WriteLine($"Team {team} was already created!");
+                    continue;
+                }
+                if (teams.Select(x => x.Creator).Contains(user))  // creator trying to create another team
+                {
+                    Console.WriteLine($"{user} cannot create another team!");
+                    continue;
+                }
+
+                Console.WriteLine($"Team {team} has been created by {user}!");
+                teams.Add(new Team(user, team));
+            }
+            return teams;
+        }
+
+        static void HandleJoinTeams(List<Team> teams)
+        {
+            // this method handles all the commands for users that want to join certain teams
+            while (true)
+            {
+                string command = Console.ReadLine();
+                if (command == "end of assignment")
+                    break;
+
+                string[] separatedInput = command.Split(new string[] { "->" }, StringSplitOptions.RemoveEmptyEntries);
+                string user = separatedInput[0];
+                string teamToJoin = separatedInput[1];
+
+                if (!teams.Select(team => team.Name).Contains(teamToJoin))  // trying to join a team that doesn't exist
+                {
+                    Console.WriteLine($"Team {teamToJoin} does not exist!");
+                    continue;
+                }
+                if (teams.Select(team => team.Members.Contains(user)).Contains(true) ||  // the user is in another team
+                    teams.Select(team => team.Creator).Contains(user))    // the user is a creater of a team
+                {
+                    Console.WriteLine($"Member {user} cannot join team {teamToJoin}!");
+                    continue;
+                }
+
+                // add the user to the team
+                teams.Where(team => team.Name == teamToJoin).First().AddMember(user);
+            }
         }
     }
 
