@@ -14,16 +14,8 @@ class ReplaceATags
     {
         string input = ReadInput();
         Regex rex = new Regex(regPattern);
-        MatchCollection matches = rex.Matches(input);
-        foreach (Match match in matches)
-        {
-            string link = match.Groups["link"].ToString();
-            string rest = match.Groups["rest"].ToString();
-
-            input = input.Replace(match.ToString(), "[URL " + link + "]" + rest + "[/URL]");
-        }
-
-        Console.WriteLine(input);
+        string replacement = @"[URL $2]$4[/URL]";
+        Console.WriteLine(Regex.Replace(input, regPattern, replacement));
     }
 
     static string ReadInput()
