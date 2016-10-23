@@ -1,0 +1,8 @@
+400/400. Results are sorted by points and then by the earliest submission.
+Fairly easy exam, this time it was split in two pieces.
+I should be in the top 5 of all the 500 participants.
+We had 3 hours to do the first two problems (CharityMarathon and Ladybugs). I finished those around 5th place.
+After a 30 minute break, they opened up and showed us the last two problems (NetherRealms and RoliTheCoder).
+We had 3 hours to do those as well, where I was the first to solve both with maximum points.
+To prove that, I've attached a photo showing the results in the judge system. The person (Gesh4o) who's above me is
+Georgi Stoimen, who was one of the lecturers for the course, so he obviously doesn't count. (He solved it beforehand, most likely)
